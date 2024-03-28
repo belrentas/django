@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .forms import AddForm
 from .models import Contact
 from django.http import HttpResponseRedirect
@@ -41,4 +41,6 @@ def add(request):
     else:
         return render(request, 'mycontacts/add.html')
 
-    
+def view_contacts(request, contact_id):
+    contact = get_object_or_404(Contact, pk=contact_id)
+    return render(request, 'mycontacts/view_contacts.html',{'contact': contact})

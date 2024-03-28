@@ -9,7 +9,7 @@ textarea {
 
 .form-label {
 	font-size: 13px;
-	color: #16c5bf;
+	color: #ffcfd8;
 	margin: 0;
 	display: block;
 	opacity: 1;
@@ -27,7 +27,7 @@ textarea {
 
 .form-control:focus {
 	box-shadow: none;
-	border-color: #0B3B39;
+	border-color: #e188a9;
 }
 
 .js-hide-label {
@@ -53,7 +53,7 @@ textarea {
 }
 
 .btn:hover,.btn:active, .btn:focus {
-	border-color: #16c5bf;
-	color: #16c5bf;
+	border-color: #ffcfd8;
+	color: #ffcfd8;
 	transform: translateX(-1px);
 }
